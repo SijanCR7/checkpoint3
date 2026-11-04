@@ -1,0 +1,177 @@
+/* Main shopping cart container */
+#root {
+  width: 100%;
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading */
+h1 {
+  color: #2563eb;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Description */
+p {
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Section headings */
+h3 {
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Stationery item labels */
+label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 230px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  margin-right: 12px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+/* Quantity dropdowns */
+select {
+  width: 75px;
+  padding: 9px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Display total button */
+button {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin-top: 25px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Shopping cart headings */
+h2 {
+  color: #2563eb;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Shopping cart table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+/* Table headings */
+th {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table cells */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Alternate table rows */
+tbody tr:nth-child(even) {
+  background-color: #f2f6ff;
+}
+
+/* Prevent table overflow */
+table {
+  table-layout: fixed;
+}
+
+th,
+td {
+  overflow-wrap: anywhere;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make the layout work on mobile */
+@media (max-width: 600px) {
+  #root {
+    width: auto;
+    margin: 15px auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  label {
+    width: 65%;
+    font-size: 14px;
+  }
+
+  select {
+    width: 25%;
+    margin-left: 5px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
